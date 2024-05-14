@@ -1,7 +1,7 @@
 {
-  "name": "custom-ciphers",
+  "name": "character-code-ciphers",
   "version": "1.0.0",
-  "description": "Supports creation of multi-step ciphers",
+  "description": "Supports creation of complex ciphers based on character codes",
   "main": "lib/index.js",
   "files": [
     "lib/**/*"
@@ -10,6 +10,10 @@
     "lint": "eslint --ext .ts src",
     "lint-fix": "eslint --fix --ext .ts src",
     "test": "jest tests",
+    "test-columnar": "jest tests/columnar.test.ts",
+    "test-characters": "jest tests/characters.test.ts",
+    "test-ranges": "jest tests/ranges.test.ts",
+    "test-substitutions": "jest tests/substitutions.test.ts",
     "build": "tsc"
   },
   "keywords": [
